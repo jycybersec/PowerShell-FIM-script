@@ -31,8 +31,7 @@ If the user selects **Option 2**, the script will:
   - Every second, it checks all files in the `.\TargetFiles` directory.
   - For each file, it calculates the current hash and compares it with the stored hash in the dictionary.
   - If a file is new (not in the dictionary), it notifies the user of the creation.</br></br>
-   ![image](https://github.com/jycybersec/PowerShell-FIM-script/assets/171355828/6c5be85a-b7da-4b4f-89a7-3ba4258e7d43)
-
+   ![image](https://github.com/jycybersec/PowerShell-FIM-script/assets/171355828/37b82218-00c0-42f8-8013-94d69c4ce1f7)
 
 
   - If a file's hash has changed, it notifies the user of the modification.</br></br>
@@ -40,7 +39,7 @@ If the user selects **Option 2**, the script will:
 
 
   - If a file from the baseline is missing, it notifies the user of the deletion.</br></br>
-  ![image](https://github.com/jycybersec/PowerShell-FIM-script/assets/171355828/12241b57-a211-46eb-b9a7-0243fd035c55)
+   ![image](https://github.com/jycybersec/PowerShell-FIM-script/assets/171355828/6c5be85a-b7da-4b4f-89a7-3ba4258e7d43)
 
 
 ## Security and Integrity
