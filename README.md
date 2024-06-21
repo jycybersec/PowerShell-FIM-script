@@ -9,7 +9,7 @@ This PowerShell script is designed to monitor file integrity within a directory.
 
 ## Main Script
 
-The script prompts the user to choose between creating a new baseline (Option 1) or begin monitoring with a saved baseline (Option 2). </br>
+The script prompts the user to choose between creating a new baseline (Option 1) or begin monitoring with a saved baseline (Option 2). </br></br>
 ![image](https://github.com/jycybersec/PowerShell-FIM-script/assets/171355828/95f33ef9-07b5-4082-8278-dc495f018817)
 
 
@@ -24,22 +24,22 @@ If the user selects **Option 1**, the script will:
 ### Option 2 - Begin Monitoring
 
 If the user selects **Option 2**, the script will:
-- Create a dictionary to store file paths and their corresponding hashes from `baseline_record.txt`. </br>
+- Create a dictionary to store file paths and their corresponding hashes from `baseline_record.txt`. </br></br>
   ![image](https://github.com/jycybersec/PowerShell-FIM-script/assets/171355828/da3dcb36-51c4-448c-af4a-b5cb10c49c32)
 
 - Enter a continuous loop to monitor the files:
   - Every second, it checks all files in the `.\TargetFiles` directory.
   - For each file, it calculates the current hash and compares it with the stored hash in the dictionary.
-  - If a file is new (not in the dictionary), it notifies the user of the creation.</br>
+  - If a file is new (not in the dictionary), it notifies the user of the creation.</br></br>
    ![image](https://github.com/jycybersec/PowerShell-FIM-script/assets/171355828/6c5be85a-b7da-4b4f-89a7-3ba4258e7d43)
 
 
 
-  - If a file's hash has changed, it notifies the user of the modification.</br>
+  - If a file's hash has changed, it notifies the user of the modification.</br></br>
    ![image](https://github.com/jycybersec/PowerShell-FIM-script/assets/171355828/190639ab-85c6-4c57-8300-5d0e293701ad)
 
 
-  - If a file from the baseline is missing, it notifies the user of the deletion.</br>
+  - If a file from the baseline is missing, it notifies the user of the deletion.</br></br>
   ![image](https://github.com/jycybersec/PowerShell-FIM-script/assets/171355828/12241b57-a211-46eb-b9a7-0243fd035c55)
 
 
