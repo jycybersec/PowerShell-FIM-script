@@ -17,7 +17,7 @@ The script prompts the user to choose between creating a new baseline (Option 1)
 
 If the user selects **Option 1**, the script will:
 - Call `Remove-ExistingBaseline` to ensure no previous baseline exists.
-- Collect all files in the `.\TargetFiles` directory.  #Warning You will need to create this directory or replace it with your own
+- Collect all files in the `.\TargetFiles` directory.  **(Warning You will need to create this directory or replace it with your own)**
 - Calculate the SHA512 hash for each file.
 - Append each file's path and hash to `baseline_record.txt`.
 
